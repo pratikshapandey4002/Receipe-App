@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="page-content">
+    <nav>
+        <h2>YUMZi.</h2>
+        <button class="saved-receipes"><i class="fa fa-bookmark"></i> Saved Receipes</button>
+    </nav>
+    <main>
+        
+        <div class="banner"  >
+            <img class="background-img">
+            <div class="banner-text">
+                <h1>Your Desired Dish?</h1>
+                <div class="search-tab">
+                <input type="text" placeholder="Search Receipes" class="srch-box"><button class="srch-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <p>Search Any receipes from any corner of the world</p>
+            </div>
+        </div>
+        <div class="area">
+            <h2>Explore Receipes By Area</h2>
+                <div class="slider-container" id="slider-container">
+
+                </div>
+
+        </div>
+
+        <div class="categories">
+            <h2>Most Popular Categories</h2>
+            <div class="categories-container">
+            </div>
+        </div>
+
+        <div class="random-recipe-btn">
+            <button id="generate-random-btn"><i class="fa fa-random"></i> Generate Random Recipe</button>
+        </div>
+    </div>
+
+    <div class="loading-spinner hidden">
+        <div class="spinner"></div>
+    </div>
+
+        <div class="popup hidden">
+            <button type="button" class="receipe-close-btn">
+                <i class="fa fa-close"></i>
+            </button>
+            <div class="receipe-details-content">
+                
+            </div>
+        </div>
+        
+        
+
+        
+    </main>
+    <script src="/javascript/home.js"></script>
+
+    
+</body>
+</html>

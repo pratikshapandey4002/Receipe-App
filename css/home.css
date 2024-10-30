@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+.saved-receipes{
+    padding: .5rem .7rem;
+    font-size:medium;
+    border-radius: .5rem;
+    background-color: hsl(11, 87%, 64%);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0.2rem 0.2rem grey;
+    margin-right: 2rem;
+}
+nav h2{
+    font-family: cursive;
+    font-weight:bolder;
+    font-size:xx-large;
+    margin-left: 2rem;
+}
+.background-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/hero-banner-large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.banner-text{
+    position:absolute ;
+    margin-top: 10rem;
+    left: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;  
+    gap: 15px;  
+    color: white;
+    z-index: 1;
+
+}
+.banner-text h1{
+    font-size: 50px;
+    top: 50%;
+}
+.search-tab{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid hsl(11, 87%, 64%);
+}
+.search-tab input{
+    font-size: large;
+    padding: .5rem .7rem;
+    border:none;
+    width: 100%;
+}
+.srch-btn{
+    padding: .2rem .7rem;
+    background-color: hsl(11, 87%, 64%);
+    border: none;
+
+}
+.banner-text p{
+    font-size: large;
+}
+.area{
+   background-color: rgb(245, 240, 240);
+    padding: 1rem;
+    text-align: center;
+}
+.area h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    color: black;
+}
+.slider-container{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px;
+    padding: 10px;
+}
+.slider-card{
+    display: inline-block;
+    background-color: hsl(11, 87%, 64%);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 150px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-card:hover{
+    background-color: hsl(11, 68%, 49%);
+    transform: scale(1.2);
+}
+.categories{
+    background-color:rgb(245, 240, 240);
+}
+.categories h2{
+     text-align: center;
+     font-size: xx-large;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding:30px;
+}
+.categories-container{
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px;
+    padding: 10px;
+}
+.category-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(244, 205, 191, 0.329);
+    border-radius: 10px;
+    border: 1px solid hsl(11, 68%, 49%);
+    height:max-content;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+.category-card:hover{
+    transform: scale(1.05);
+}
+.category-card img{
+ height: 200px;
+ margin: .5rem;
+ border-radius: 10px;
+}
+.category-card h3{
+    font-family: cursive;
+    font-size: xx-large;
+    padding: 5px;
+}
+.category-card button{
+    margin: 15px 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:hsl(11, 87%, 64%);
+    color: white;
+    font-size: x-large;
+    border: orangered;
+    box-shadow: 1px 3px hsl(11, 68%, 49%);
+}
+.heading{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+.receipes-container{
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-gap: 40px ;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+
+/* Button at bottom right */
+.random-recipe-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.random-recipe-btn button {
+    padding: 1rem;
+    background-color: hsl(11, 87%, 64%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50px;
+    box-shadow: 0.2rem 0.2rem grey;
+}
+
+.hidden{
+    display: none;
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 12px;
+    font-size: 20px;
+    transition: all 0.5 ease-in-out;
+    z-index: 1;
+}
+.receipe-details-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    border: 2px solid hsl(11, 68%, 49%);
+    height:min-content;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5px;
+    z-index: 1;
+    box-shadow: 2px 3px hsl(11, 68%, 49%);
+}
+.receipe-details-content img{
+    height: 200px;
+    margin: .5rem;
+    border-radius: 10px;
+}
+.receipe-details-content h3{
+    font-family: cursive;
+    font-size: x-large;
+    padding: 5px;
+
+}
+.receipe-details-content button{
+    margin: 15px 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:hsl(11, 87%, 64%);
+    color: white;
+    font-size: x-large;
+    border: orangered;
+    box-shadow: 1px 3px hsl(11, 68%, 49%);
+}
+.receipe-close-btn{
+    position: fixed;
+    right: 5px;
+    padding: 3px 4px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.receipe-close-btn:hover{
+    transform: scale(1.05) ;
+}
+
+.disable-clicks .page-content {
+    pointer-events: none;
+}
+
+/* Centered spinner with a fun animation */
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: fun-spin 2s ease-in-out infinite;
+}
+
+/* Fun expanding and rotating animation */
+@keyframes fun-spin {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}

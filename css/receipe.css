@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    box-shadow: 1px 2px grey;
+    z-index: 1;
+}
+.search{
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid hsl(11, 68%, 49%);
+}
+.srch-box{
+    width: 300px;
+    font-size: large; 
+    padding: 5px; 
+    border: none;
+}
+.srch-btn{
+    background-color: hsl(11, 87%, 64%);
+    padding: 2px 7px;
+    border: none;
+}
+.saved-receipes{
+    padding: .5rem .7rem;
+    font-size:medium;
+    border-radius: .5rem;
+    background-color: hsl(11, 87%, 64%);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0.2rem 0.2rem grey;
+    margin-right: 2rem;
+}
+nav h1{
+    font-family: cursive;
+    font-weight:bolder;
+    font-size:xx-large;
+    margin-left: 1.5rem;
+}
+.rest{
+    border: 2px double hsl(11, 68%, 49%);
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.heading{
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    font-size:45px;
+}
+.rest{
+    background-color: rgb(245, 240, 240);
+    margin: 10px;
+    border: 2px double hsl(11, 68%, 49%);
+}
+.receipes-container{
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-gap: 40px ;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+   
+
+}
+.category-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73 , 0.1) , -5px -5px 10px rgba(34, 34,34, 0.5);
+    cursor: pointer;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out ;
+    border: 1px solid hsl(11, 68%, 49%);
+}
+.category-card:hover{
+    transform: scale(1.02);
+
+}
+.category-card img{
+    height: 300px;
+}
+.category-card h3{
+    font-size: 24px;
+    margin-block: 5px;
+}
+.category-card button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+.category-card button:hover{
+    background-color: #ff5c5c;
+}

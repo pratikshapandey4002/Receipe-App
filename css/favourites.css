@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    box-shadow: 1px 2px grey;
+    z-index: 1;
+}
+.search{
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid hsl(11, 68%, 49%);
+}
+.srch-box{
+    width: 300px;
+    font-size: large; 
+    padding: 5px; 
+    border: none;
+}
+.srch-btn{
+    background-color: hsl(11, 87%, 64%);
+    padding: 2px 7px;
+    border: none;
+}
+.saved-receipes{
+    padding: .5rem .7rem;
+    font-size:medium;
+    border-radius: .5rem;
+    background-color: hsl(11, 87%, 64%);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0.2rem 0.2rem grey;
+    margin-right: 2rem;
+}
+nav h1{
+    font-family: cursive;
+    font-weight:bolder;
+    font-size:xx-large;
+    margin-left: 1.5rem;
+}
+#heading{
+    font-size: 3rem;
+    font-family: cursive;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#favorites-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(244, 205, 191, 0.329);
+    border-radius: 10px;
+    border: 1px solid hsl(11, 68%, 49%);
+    height:max-content;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+}
+.recipe-card:hover{
+    transform: scale(1.05);
+}
+.recipe-card img{
+ height: 200px;
+ margin: .5rem;
+ border-radius: 10px;
+}
+.recipe-card h3{
+    font-family: cursive;
+    font-size: xx-large;
+    padding: 5px;
+}
+.recipe-card button{
+    margin: 15px 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:hsl(11, 87%, 64%);
+    color: white;
+    font-size: x-large;
+    border: orangered;
+    box-shadow: 1px 3px hsl(11, 68%, 49%);
+}
