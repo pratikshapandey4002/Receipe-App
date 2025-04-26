@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to redirect to the recipe details page
 function viewRecipe(id) {
-    window.location.href = `/html/receipedetail.html?id=${id}`; // Adjust according to your recipe details page URL
+    window.location.href = `./html/receipedetail.html?id=${id}`; // Adjust according to your recipe details page URL
 }
