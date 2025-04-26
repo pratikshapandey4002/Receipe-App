@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    box-shadow: 1px 2px grey;
+    z-index: 1;
+}
+.search{
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid hsl(11, 68%, 49%);
+}
+.srch-box{
+    width: 300px;
+    font-size: large; 
+    padding: 5px; 
+    border: none;
+}
+.srch-btn{
+    background-color: hsl(11, 87%, 64%);
+    padding: 2px 7px;
+    border: none;
+}
+.saved-receipes{
+    padding: .5rem .7rem;
+    font-size:medium;
+    border-radius: .5rem;
+    background-color: hsl(11, 87%, 64%);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0.2rem 0.2rem grey;
+    margin-right: 2rem;
+}
+nav h1{
+    font-family: cursive;
+    font-weight:bolder;
+    font-size:xx-large;
+    margin-left: 1.5rem;
+}
+.detail{
+    margin:20px;
+    border: 2px double hsl(11, 68%, 49%);
+    padding: 2rem;
+}
+#Receipe-detail{
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px
+}
+#save-receipe{
+    position: absolute;
+    right: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:hsl(11, 87%, 64%);
+    color: white;
+    font-size: x-large;
+    border: orangered;
+    box-shadow: 1px 3px hsl(11, 68%, 49%);
+}
+.receipe-content{
+    display: flex;
+    justify-content:center;
+    gap: 10rem;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+.image {
+    height: 400px;
+    width: 500px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.instructions {
+    max-width: 500px;
+}
+.instructions .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.instructions .sub-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.instructions ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+.cooking-instructions {
+    margin-top: 2rem;
+}
+
+.cooking-instructions .sub-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cooking-instructions p {
+    line-height: 1.6;
+    font-size: larger;
+}
+.list{
+    font-size: x-large;
+}  
