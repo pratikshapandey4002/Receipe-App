@@ -3,7 +3,7 @@ const searchBox = document.querySelector('.srch-box');
 const saved_receipes = document.querySelector('.saved-receipes');
 
 saved_receipes.addEventListener('click' , () => {
-    window.location.href = `../html/favourites.html`;
+    window.location.href = `/html/favourites.html`;
 })
 searchBtn.addEventListener('click' , () => {
 
@@ -12,7 +12,7 @@ searchBtn.addEventListener('click' , () => {
         alert("Enter the meal in the search box !");
     }
     else{
-        window.location.href = `../html/receipes.html?query=${SearchQuery}`;
+        window.location.href = `/html/receipes.html?query=${SearchQuery}`;
     }
 });
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded" , async  () => {
         card.textContent = area.strArea;
 
         card.addEventListener("click" , () => {
-            window.location.href = `../html/receipes.html?area=${area.strArea}`;
+            window.location.href = `/html/receipes.html?area=${area.strArea}`;
         });
         sliderContainer.appendChild(card);
         
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded" , async  () => {
         button.textContent = "View Receipes";
         categoryDiv.appendChild(button);
         button.addEventListener('click' , () => {
-            window.location.href = `../html/receipes.html?category=${category.strCategory}`;
+            window.location.href = `/html/receipes.html?category=${category.strCategory}`;
         });
         categories_container.appendChild(categoryDiv);
     })
@@ -90,7 +90,7 @@ randomBtn.addEventListener('click' , async () => {
         button.textContent = 'view Rceipe';
         receipe_details_content.appendChild(button);
         button.addEventListener('click' , () => {
-            window.location.href = `../html/receipedetail.html?query=${randomMeal.strMeal}`;
+            window.location.href = `/html/receipedetail.html?query=${randomMeal.strMeal}`;
         });
     }catch(error){
         alert('Error fetching random receipe');
